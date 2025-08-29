@@ -7,17 +7,66 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>
-        <span>Bem vindo ao</span>
-        <span class="palavra-anim">
-            <span class="lista">
-                <span>&nbsp;site</span>
-                <span>&nbsp;futuro</span>
-                <span>&nbsp;meu portfólio</span>
-                <span>&nbsp;futuro</span>
-            </span>
-        </span>
+    <nav class="navegacao">
+        <ul class="menu">
+            <li><a href="#inicio" class="menulink">Início</a></li>
+            <li><a href="#sobre" class="menulink">Sobre</a></li>
+            <li><a href="#projetos" class="menulink">Projetos</a></li>
+            <li><a href="#contato" class="menulink">Contato</a></li>
+        </ul>
+    </nav>
 
-    </h1>
+    <main id="inicio" class="cabecalho">
+        <div>
+            <img src="imagem/gato1300.jpg" alt="foto Leandro" class="fotoperfil">
+            <h1>Leandro Henrique</h1>
+            <p>Estudante de Analise e Desenvolvimento de Sistemas</p>
+        </div>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobretitulo">Sobre mim</h2>
+        <div class="sobrecaixa">
+            <p class="sobreparagrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem est vitae praesentium officia delectus eaque omnis, inventore aut perspiciatis, similique illum impedit? Totam sequi adipisci porro nobis at saepe quasi?</p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetostitulo">Meus Projetos</h2>
+        <div class="projetoscaixa">
+            <div class="projetoscard">
+                <img src="imagem/gato2300.jpg" alt="projeto 1">
+                <h3 class="infoprojetos">Projeto 1</h3>
+                <p class="paragrafoprojetos">Descrição do projeto 1.</p>
+            </div>
+            <div class="projetoscard">
+                <img src="imagem/gato2300.jpg" alt="projeto 2">
+                <h3 class="infoprojetos">Projeto 2</h3>
+                <p class="paragrafoprojetos">Descrição do projeto 2.</p>
+            </div>
+            <div class="projetoscard">
+                <img src="imagem/gato2300.jpg" alt="projeto 3">
+                <h3 class="infoprojetos">Projeto 3</h3>
+                <p class="paragrafoprojetos">Descrição do projeto 3.</p>
+            </div>
+            <div class="projetoscard">
+                <img src="imagem/gato2300.jpg" alt="projeto 4">
+                <h3 class="infoprojetos">Projeto 4</h3>
+                <p class="paragrafoprojetos">Descrição do projeto 4.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2 class="contatostitulo">Contatos</h2>
+        <form class="formulariocontato" id="formulario">
+            <div class="nomeform">
+                <input placeholder="nome" class="campoform">
+            </div>
+            <div class="grupoform">
+                <textarea placeholder="Digite sua mensagem" class="textform"></textarea>
+            </div>
+        </form>
+    </section>
 </body>
 </html>

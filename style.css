@@ -1,49 +1,66 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+    --primaria: #4f46e5;
+    --secundaria: #7c3aed;
+    --escuro: #0f172a;
+    --mais-escuro: #0a0f1c;
+    --claro: #e2e8f0;
+    --vidro: #rgba(255, 255, 255, 0.1);
+    
+}
+
 body {
-    background-color: #FFDFB9;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--escuro);
+    color: var(--claro);
+}
+
+.navegacao {
+    position: fixed;
+    top: 0;
+    background-color: rgba(15, 23, 42, 0.8);
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem;
+}
+
+.menu {
     display: flex;
+    list-style: none;
+    gap: 3rem;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-
 }
 
-h1 {
-    font-size: 2.5em;
-    display: flex;
-    gap: 10px;
-    ;
-}
-
-.palavra-anim {
+.menulink {
+    text-decoration: none;
+    color: var(--claro);
+    font-weight: 500;
     position: relative;
-    height: 1.2em;
-    overflow: hidden;
+    padding: 0.5rem 0;
 }
 
-.palavra-anim .lista {
-    display: flex;
-    flex-direction: column;
-    animation: subirpalavras 9s infinite;
+.menulink::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    transition: width 0.5s ease;
+
 }
 
-.lista span {
-    height: 1.2em;
-    transition: transform 0.5s ease-in-out;
-    color: #A4193D;
-}
-
-@keyframes subirpalavras{
-    0% {transform: translateY(0);}
-    20% {transform: translateY(0);}
-    25% {transform: translateY(-1.2em);}
-    45% {transform: translateY(-1.2em);}
-    50% {transform: translateY(-2.4em);}
-    70% {transform: translateY(-2.4em);}
-    75% {transform: translateY(-3.6em);}
-    95% {transform: translateY(-3.6em);}
-    100% {transform: translateY(0);}
+.menulink:hover::after {
+    width: 100%;
 }
