@@ -1,0 +1,49 @@
+@charset "UTF-8";
+body {
+    background-color: #FFDFB9;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+
+h1 {
+    font-size: 2.5em;
+    display: flex;
+    gap: 10px;
+    ;
+}
+
+.palavra-anim {
+    position: relative;
+    height: 1.2em;
+    overflow: hidden;
+}
+
+.palavra-anim .lista {
+    display: flex;
+    flex-direction: column;
+    animation: subirpalavras 9s infinite;
+}
+
+.lista span {
+    height: 1.2em;
+    transition: transform 0.5s ease-in-out;
+    color: #A4193D;
+}
+
+@keyframes subirpalavras{
+    0% {transform: translateY(0);}
+    20% {transform: translateY(0);}
+    25% {transform: translateY(-1.2em);}
+    45% {transform: translateY(-1.2em);}
+    50% {transform: translateY(-2.4em);}
+    70% {transform: translateY(-2.4em);}
+    75% {transform: translateY(-3.6em);}
+    95% {transform: translateY(-3.6em);}
+    100% {transform: translateY(0);}
+}
