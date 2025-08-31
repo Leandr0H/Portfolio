@@ -1,72 +1,127 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="particulas"></div>
+
     <nav class="navegacao">
         <ul class="menu">
             <li><a href="#inicio" class="menulink">Início</a></li>
             <li><a href="#sobre" class="menulink">Sobre</a></li>
+            <li><a href="#habilidades" class="menulink">Habilidades</a></li>
             <li><a href="#projetos" class="menulink">Projetos</a></li>
             <li><a href="#contato" class="menulink">Contato</a></li>
         </ul>
     </nav>
 
     <main id="inicio" class="cabecalho">
-        <div>
-            <img src="imagem/gato1300.jpg" alt="foto Leandro" class="fotoperfil">
-            <h1>Leandro Henrique</h1>
-            <p>Estudante de Analise e Desenvolvimento de Sistemas</p>
+        <img src="imagem/gato1300.jpg" alt="foto Leandro" class="fotoperfil">
+        <h1>Leandro Henrique</h1>
+        <p class="cabecalhosubtitulo">Estudante de análise e Desenvolvimento de Sistemas</p>
+        <div class="icones">
+            <a href="https://www.linkedin.com/in/leandr0h" target="_blank"><img src="imagem/linkedin.png" alt="LinkedIn"
+                    class="iconeimagem"></a>
+            <a href="https://github.com/Leandr0H" target="_blank"><img src="imagem/github.png" alt="Github"
+                    class="iconeimagem"></a>
+            <a href="https://wa.me/11979713360" target="_blank"><img src="imagem/whatsapp.png" alt="WhatsApp"
+                    class="iconeimagem"></a>
         </div>
     </main>
 
     <section id="sobre" class="sobre">
         <h2 class="sobretitulo">Sobre mim</h2>
         <div class="sobrecaixa">
-            <p class="sobreparagrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem est vitae praesentium officia delectus eaque omnis, inventore aut perspiciatis, similique illum impedit? Totam sequi adipisci porro nobis at saepe quasi?</p>
+            <p class="sobreparagrafo">Busco uma oportunidade para iniciar minha carreira na área de tecnologia,
+                aplicando meus conhecimentos adquiridos por meio de estudos e projetos pessoais.</p>
         </div>
     </section>
+
+    <section class="habilidades" id="habilidades">
+        <h2 class="titulohabilidades">Minhas habilidades</h2>
+        <div class="habilidadescaixa">
+            <div class="habilidadescard">
+                <img src="imagem/programacao.png" alt="projeto 1" class="habilidadesimagem">
+                <h3 class="habilidadesnome">Lógica</h3>
+                <p class="paragrafohabilidades">Sequências lógicas de instruções (algoritmos) que um computador pode
+                    entender e executar para realizar tarefas específicas</p>
+            </div>
+            <div class="habilidadescard">
+                <img src="imagem/html.png" alt="projeto 1" class="habilidadesimagem">
+                <h3 class="habilidadesnome">HTML</h3>
+                <p class="paragrafohabilidades">Linguagem padrão utilizada para criar e estruturar o conteúdo de páginas
+                    da web</p>
+            </div>
+            <div class="habilidadescard">
+                <img src="imagem/css-3.png" alt="projeto 1" class="habilidadesimagem">
+                <h3 class="habilidadesnome">CSS</h3>
+                <p class="paragrafohabilidades">Linguagem de estilo usada para descrever a apresentação de documentos
+                    escritos em HTML</p>
+            </div>
+
+    </section>
+
 
     <section id="projetos" class="projetos">
         <h2 class="projetostitulo">Meus Projetos</h2>
         <div class="projetoscaixa">
             <div class="projetoscard">
-                <img src="imagem/gato2300.jpg" alt="projeto 1">
-                <h3 class="infoprojetos">Projeto 1</h3>
-                <p class="paragrafoprojetos">Descrição do projeto 1.</p>
+                <img src="imagem/gato2300.jpg" alt="projeto 1" class="projetosimagem">
+                <div class="caixatextosprojeto">
+                    <h3 class="infoprojetos">Projeto 1</h3>
+                    <p class="paragrafoprojetos">Descrição do projeto 1.</p>
+                </div>
             </div>
             <div class="projetoscard">
-                <img src="imagem/gato2300.jpg" alt="projeto 2">
-                <h3 class="infoprojetos">Projeto 2</h3>
-                <p class="paragrafoprojetos">Descrição do projeto 2.</p>
+                <img src="imagem/gato2300.jpg" alt="projeto 2" class="projetosimagem">
+                <div class="caixatextosprojeto">
+                    <h3 class="infoprojetos">Projeto 2</h3>
+                    <p class="paragrafoprojetos">Descrição do projeto 2.</p>
+                </div>
             </div>
             <div class="projetoscard">
-                <img src="imagem/gato2300.jpg" alt="projeto 3">
-                <h3 class="infoprojetos">Projeto 3</h3>
-                <p class="paragrafoprojetos">Descrição do projeto 3.</p>
+                <img src="imagem/gato2300.jpg" alt="projeto 3" class="projetosimagem">
+                <div class="caixatextosprojeto">
+                    <h3 class="infoprojetos">Projeto 3</h3>
+                    <p class="paragrafoprojetos">Descrição do projeto 3.</p>
+                </div>
             </div>
-            <div class="projetoscard">
-                <img src="imagem/gato2300.jpg" alt="projeto 4">
-                <h3 class="infoprojetos">Projeto 4</h3>
-                <p class="paragrafoprojetos">Descrição do projeto 4.</p>
-            </div>
+        </div>
         </div>
     </section>
 
     <section id="contato" class="contato">
-        <h2 class="contatostitulo">Contatos</h2>
+        <h2 class="contatostitulo">Entre em contato</h2>
         <form class="formulariocontato" id="formulario">
-            <div class="nomeform">
-                <input placeholder="nome" class="campoform">
+            <div class="grupoform">
+                <input placeholder="Digite seu nome" class="campoform" id="nome">
             </div>
             <div class="grupoform">
-                <textarea placeholder="Digite sua mensagem" class="textform"></textarea>
+                <textarea placeholder="Digite sua mensagem" class="campoform" id="mensagem" rows="3"></textarea>
             </div>
+
+            <button type="submit" class="botaoform">Enviar WhatsApp</button>
         </form>
     </section>
+    <script>
+        document.getElementById('formulario').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const nome = event.target.querySelector('input').value;
+            const mensagem = event.target.querySelector('textarea').value;
+
+            const numeroWhatsApp = '11979713360';
+            const textoMensagem = `Olá, meu nome é ${nome}, ${mensagem}`;
+            const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(textoMensagem)}`;
+
+            window.open(urlWhatsApp, '_blank');
+        });
+    </script>
 </body>
+
 </html>
